@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Welcome to <%=shopName%></title>
+    <link rel="stylesheet"  type="text/css" href="main.css" />
+  </head>
+  <body>
+    <h1><%=shopName%> Shop</h1>
+    <h2>Here are the list of users:</h2>
+    
+    <ul>
+      <% availabledata.forEach(function(data) { %>
+
+        <li> <b>username: </b><%= data.username %>, <b>Email: </b><%= data.email %>, <b>First Name:</b><%= data.first %>, <b>Last Name: </b><%= data.last %> </li>
+      <% }) %>
+    </ul>
+    <!--Home page Link-->
+    <p><a href="./">Home</a></p>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Welcome to <%=shopName%></title>
+    <link rel="stylesheet"  type="text/css" href="main.css" />
+  </head>
+  <body>
+    <h1><%=shopName%> Shop</h1>
+    <h2>Here are our bargain books:</h2>
+    <ul>
+      <% availableBooks.forEach(function(book) { %>
+        <li><%= book.name %>, £<%=book.price%> </li>
+      <% }) %>
+    </ul>
+    <!--Home page Link-->
+    <p><a href="./">Home</a></p>
+    </body>
+</html>
